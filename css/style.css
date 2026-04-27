@@ -32,6 +32,7 @@ form{
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 fieldset{
@@ -40,10 +41,71 @@ fieldset{
     border-radius: 5px;
     margin-bottom: 15px;
 }
-
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
 legend{
     font-weight: bold;
     font-size: 18px;
     padding: 0 5px;
 }
 
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+}
+
+input[type="color"]{
+    width: 40px;
+    padding: 0 5px;
+}
+
+input:invalid, select:invalid, textarea:invalid{
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid{
+    border-color: green;
+}
+
+p{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover{
+    background-color: orangered;
+    color: #ffffff;
+}
+
+.titulo-sucesso{
+    margin-top: 150px;
+}
