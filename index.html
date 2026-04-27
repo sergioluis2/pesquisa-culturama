@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>Pesquisa</h1>
+        <h1>Pesquisa Culturama</h1>
     </header>
     <section>
         <form action="" method="get">
@@ -35,6 +35,7 @@
                 <br>
             </fieldset>
             <!-- DADOS PESSOAIS -->
+             
             <!-- PERFIL-->
             <fieldset>
             <legend>Perfil</legend>
@@ -94,19 +95,20 @@
             </fieldset>
             <!-- PERFIL-->
 
+             <!-- HÁBITOS-->
             <fieldset>
                 <legend>Hábitos</legend>
                 <p>Redes Sociais:</p>
-                <input id="instagram" type="checkbox" name="social" value="instagram">
+                <input id="instagram" type="checkbox" name="userSocial" value="instagram">
                 <label for="instagram">Instagram</label>
                 <br>
-                <input id="facebook" type="checkbox" name="social" value="facebook">
+                <input id="facebook" type="checkbox" name="userSocial" value="facebook">
                 <label for="facebook">Facebook</label>
                 <br>
-                <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                <input id="linkedin" type="checkbox" name="userSocial" value="linkedin">
                 <label for="linkedin">Linkedin</label>
                 <br>
-                <input id="x" type="checkbox" name="social" value="x">
+                <input id="x" type="checkbox" name="userSocial" value="X">
                 <label for="x">X</label>
                 <br>
                 <label for="musicStyle">Estilo musical:</label>
@@ -120,9 +122,28 @@
                 <label for="favoriteColor">Cor favorita:</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
+            <!-- HÁBITOS-->
 
+            <!-- OPNIÃO-->
+            <fieldset>
+                <legend>Opnião</legend>
 
-            
+                <input id="otima" type="radio" name="userSatisfaction" value="otima">
+                <label for="otima">Ótima</label>
+
+                 <input id="boa" type="radio" name="userSatisfaction" value="boa">
+                <label for="boa">Boa</label>
+
+                 <input id="regular" type="radio" name="userSatisfaction" value="regular">
+                <label for="regular">Regular</label>
+
+                 <input id="ruim" type="radio" name="userSatisfaction" value="ruim">
+                <label for="ruim">Ruim</label>
+                <br><br>
+                <label for="comentario">Comentário:</label><br>
+                <textarea name="userOpnion" id="comentario" rows="5" placeholder="Digite aqui sua opnião"></textarea>
+            </fieldset>
+            <!-- OPNIÃO-->
             <button type="submit">Enviar</button>
 
         </form>
